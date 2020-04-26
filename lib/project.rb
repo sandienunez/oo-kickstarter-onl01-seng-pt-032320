@@ -10,6 +10,7 @@ def add_backer(backer)
 backers << backer 
  # backer_projects.project << self 
  backer.back_project(self) unless backer.backed_projects.include?(self)
+ # backer.backed_projects << self #flatiron solution
 end 
 
 end 
